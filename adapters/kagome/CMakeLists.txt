@@ -36,9 +36,6 @@ set(
   CACHE STRING "Binary cache server"
 )
 
-# Propagate CMake build type to dependencies
-set(HUNTER_CONFIGURATION_TYPES ${CMAKE_BUILD_TYPE})
-
 # Setup hunter
 include(cmake/HunterGate.cmake)
 HunterGate(
